@@ -2,7 +2,7 @@
 
 <img align="right" width="35%" src="https://github.com/bot-base/telegram-bot-template/assets/26162440/c4371683-3e99-4b1c-ae8e-11ccbea78f4b">
 
-Bot starter template based on [grammY](https://grammy.dev/) bot framework.  
+Bot starter template based on [grammY](https://grammy.dev/) bot framework.
 
 ## Features
 
@@ -13,16 +13,16 @@ Bot starter template based on [grammY](https://grammy.dev/) bot framework.
 - Logger (powered by [pino](https://github.com/pinojs/pino))
 - Fast and low overhead server (powered by [fastify](https://github.com/fastify/fastify))
 - Ready-to-use deployment setups:
-    - [Docker](#docker-dockercom)
-    - [Vercel](#vercel-vercelcom)
+  - [Docker](#docker-dockercom)
+  - [Vercel](#vercel-vercelcom)
 - Examples:
-    - [Prisma ORM](#prisma-orm-prismaio)
-    - grammY plugins:
-        - [Conversations](#grammy-conversations-grammydevpluginsconversations)
-        - [Runner](#grammy-runner-grammydevpluginsrunner)
-    - Web Apps:
-        - [Vanilla](#web-app-vite-typescript) (No frameworks)
-        - [Vue](#web-app-with-vue-vue-vite-typescript)
+  - [Prisma ORM](#prisma-orm-prismaio)
+  - grammY plugins:
+    - [Conversations](#grammy-conversations-grammydevpluginsconversations)
+    - [Runner](#grammy-runner-grammydevpluginsrunner)
+  - Web Apps:
+    - [Vanilla](#web-app-vite-typescript) (No frameworks)
+    - [Vue](#web-app-with-vue-vue-vite-typescript)
 
 ## Usage
 
@@ -30,50 +30,58 @@ Follow these steps to set up and run your bot using this template:
 
 1. **Create a New Repository**
 
-    Start by creating a new repository using this template. You can do this by clicking [here](https://github.com/bot-base/telegram-bot-template/generate).
+   Start by creating a new repository using this template. You can do this by clicking [here](https://github.com/bot-base/telegram-bot-template/generate).
 
 2. **Environment Variables Setup**
-    
-    Create an environment variables file by copying the provided example file:
-     ```bash
-     cp .env.example .env
-     ```
-    Open the newly created `.env` file and set the `BOT_TOKEN` environment variable.
+
+   Create an environment variables file by copying the provided example file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Open the newly created `.env` file and set the `BOT_TOKEN` environment variable.
 
 3. **Launching the Bot**
-    
-    You can run your bot in both development and production modes.
 
-    **Development Mode:**
-    
-    Install the required dependencies:
-    ```bash
-    npm install
-    ```
-    Start the bot in watch mode (auto-reload when code changes):
-    ```bash
-    npm run dev
-    ```
+   You can run your bot in both development and production modes.
+
+   **Development Mode:**
+
+   Install the required dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   Start the bot in watch mode (auto-reload when code changes):
+
+   ```bash
+   npm run dev
+   ```
 
    **Production Mode:**
-    
-    Install only production dependencies (no development dependencies):
-    ```bash
-    npm install --only=prod
-    ```
-    
-    Set the `NODE_ENV` environment variable to "production" in your `.env` file. Also, make sure to update `BOT_WEBHOOK` with the actual URL where your bot will receive updates.
-    ```dotenv
-    NODE_ENV=production
-    BOT_WEBHOOK=<your_webhook_url>
-    ```
-    
-    Start the bot in production mode:
-    ```bash
-    npm start
-    # or
-    npm run start:force # if you want to skip type checking
-    ```
+
+   Install only production dependencies (no development dependencies):
+
+   ```bash
+   npm install --only=prod
+   ```
+
+   Set the `NODE_ENV` environment variable to "production" in your `.env` file. Also, make sure to update `BOT_WEBHOOK` with the actual URL where your bot will receive updates.
+
+   ```dotenv
+   NODE_ENV=production
+   BOT_WEBHOOK=<your_webhook_url>
+   ```
+
+   Start the bot in production mode:
+
+   ```bash
+   npm start
+   # or
+   npm run start:force # if you want to skip type checking
+   ```
 
 ### List of Available Commands
 
@@ -89,7 +97,7 @@ Follow these steps to set up and run your bot using this template:
 ### Docker ([docker.com](https://docker.com))
 
 Branch:
-[deploy/docker-compose](https://github.com/bot-base/telegram-bot-template/tree/deploy/docker-compose) 
+[deploy/docker-compose](https://github.com/bot-base/telegram-bot-template/tree/deploy/docker-compose)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/deploy/docker-compose))
 
 Use in your project:
@@ -110,7 +118,7 @@ git merge template/deploy/docker-compose -X theirs --squash --no-commit --allow-
 ### Vercel ([vercel.com](https://vercel.com))
 
 Branch:
-[deploy/vercel](https://github.com/bot-base/telegram-bot-template/tree/deploy/vercel) 
+[deploy/vercel](https://github.com/bot-base/telegram-bot-template/tree/deploy/vercel)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/deploy/vercel))
 
 Use in your project:
@@ -133,7 +141,7 @@ git merge template/deploy/vercel -X theirs --squash --no-commit --allow-unrelate
 ### Prisma ORM ([prisma.io](https://prisma.io))
 
 Branch:
-[example/orm-prisma](https://github.com/bot-base/telegram-bot-template/tree/example/orm-prisma) 
+[example/orm-prisma](https://github.com/bot-base/telegram-bot-template/tree/example/orm-prisma)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/example/orm-prisma))
 
 Use in your project:
@@ -154,7 +162,7 @@ git merge template/example/orm-prisma -X theirs --squash --no-commit --allow-unr
 ### grammY conversations ([grammy.dev/plugins/conversations](https://grammy.dev/plugins/conversations))
 
 Branch:
-[example/plugin-conversations](https://github.com/bot-base/telegram-bot-template/tree/example/plugin-conversations) 
+[example/plugin-conversations](https://github.com/bot-base/telegram-bot-template/tree/example/plugin-conversations)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/example/plugin-conversations))
 
 Use in your project:
@@ -175,7 +183,7 @@ git merge template/example/plugin-conversations -X theirs --squash --no-commit -
 ### grammY runner ([grammy.dev/plugins/runner](https://grammy.dev/plugins/runner))
 
 Branch:
-[example/plugin-runner](https://github.com/bot-base/telegram-bot-template/tree/example/plugin-runner) 
+[example/plugin-runner](https://github.com/bot-base/telegram-bot-template/tree/example/plugin-runner)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/example/plugin-runner))
 
 Use in your project:
@@ -196,7 +204,7 @@ git merge template/example/plugin-runner -X theirs --squash --no-commit --allow-
 ### Web App ([Vite](https://vitejs.dev), TypeScript)
 
 Branch:
-[example/webapp](https://github.com/bot-base/telegram-bot-template/tree/example/webapp) 
+[example/webapp](https://github.com/bot-base/telegram-bot-template/tree/example/webapp)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/example/webapp))
 
 Use in your project:
@@ -217,7 +225,7 @@ git merge template/example/webapp -X theirs --squash --no-commit --allow-unrelat
 ### Web App with Vue ([Vue](https://vuejs.org), [Vite](https://vitejs.dev), TypeScript)
 
 Branch:
-[example/webapp-vue](https://github.com/bot-base/telegram-bot-template/tree/example/webapp-vue) 
+[example/webapp-vue](https://github.com/bot-base/telegram-bot-template/tree/example/webapp-vue)
 ([open diff](https://github.com/bot-base/telegram-bot-template/compare/example/webapp-vue))
 
 Use in your project:
